@@ -15,6 +15,9 @@
  */
 module.exports = {
   link: [
+    // theme
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+    { rel: 'stylesheet', href: '/assets/themes/deeppurple-amber.css' },
     /**
      * <link> tags for 'apple-touch-icon' (AKA Web Clips).
      */

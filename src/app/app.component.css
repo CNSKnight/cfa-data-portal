@@ -1,8 +1,28 @@
-html, body{
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif
+body {
+  margin: 0;
+}
+app {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
 }
 
-a.active {
-  background-color: gray;
+md-sidenav-container {
+  flex: 1;
 }
+
+header {
+  padding: 1em;
+  background-color: rgba(229, 23, 63, .8);
+}
+
+footer {
+  min-height: 3em;
+  background-color: rgba(229, 23, 63, .8);
+  padding: 1em;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* @see styles/styles.scss */

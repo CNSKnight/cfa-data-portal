@@ -1,0 +1,51 @@
+<nav>
+    <md-list>
+        <h3 md-subheader>Section 1</h3>
+        <md-list-item>
+            <md-icon md-list-icon>folder</md-icon>
+            <a
+                [routerLink]="['./']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                Index
+            </a>
+        </md-list-item>
+        <md-list-item>
+            <md-icon md-list-icon>folder</md-icon>
+            <a
+                [routerLink]="['./home']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                Home
+            </a>
+        </md-list-item>
+        <md-list-item>
+            <md-icon md-list-icon>folder</md-icon>
+            <a
+                [routerLink]="['./detail']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                Detail
+            </a>
+        </md-list-item>
+        <h3 md-subheader>Section 2</h3>
+        <md-list-item>
+            <md-icon md-list-icon>folder</md-icon>
+            <a
+                [routerLink]="['./barrel']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                Barrel
+            </a>
+        </md-list-item>
+        <md-list-item>
+            <md-icon md-list-icon>folder</md-icon>
+            <a
+                [routerLink]="['./about']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                About
+            </a>
+        </md-list-item>
+    </md-list>
+</nav>
