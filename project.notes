@@ -1,0 +1,32 @@
+Data Portal
+
+TARGET CONSUMERS
+
+- Admins(?)
+
+- Data Curators
+
+- Corporate "Consumers"
+  - Data Analysts
+
+- Operators (down-the-line)
+
+
+FEATURES/FUNCTIONALITY
+
+- System Admin Features
+  - Create/Manage Access Accts
+
+- External Source Registration
+
+- Data Registration (eg Internal (Data-Lake) Data Sets)
+
+- My Acct.
+
+
+SEARCH
+
+
+USER MGT SCENARIOS
+
+User requests access tokens from eg AWS IAM for a resource behind this service.

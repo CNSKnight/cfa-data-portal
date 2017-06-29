@@ -27,10 +27,10 @@ import { AppState } from './app.service';
         <dl-sidebar-nav></dl-sidebar-nav>
     </md-sidenav>
 
-    <main>
+    <main fxLayout="row wrap">
       <router-outlet></router-outlet>
+      <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
     </main>
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 </md-sidenav-container>
 
     <footer>

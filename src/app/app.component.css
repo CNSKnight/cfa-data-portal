@@ -16,6 +16,10 @@ header {
   background-color: rgba(229, 23, 63, .8);
 }
 
+main {
+  padding: 1em;
+}
+
 footer {
   min-height: 3em;
   background-color: rgba(229, 23, 63, .8);
