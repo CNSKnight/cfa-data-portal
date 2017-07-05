@@ -1,3 +1,9 @@
 md-sidenav {
     width: 200px;
 }
+md-sidenav a.active {
+    color: rgb(229, 23, 63);
+}
+md-list-item a {
+    text-decoration: none;
+}

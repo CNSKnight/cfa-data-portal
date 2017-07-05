@@ -42,6 +42,9 @@ import { XLargeDirective } from './home/x-large';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdSidenavModule, MdInputModule, MdButtonModule } from '@angular/material';
 
+// modules
+import DLMyAccountModule from './dl-my-account/dl-my-account.module';
+
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
@@ -51,11 +54,11 @@ const APP_PROVIDERS = [
   AppState
 ];
 
-type StoreType = {
-  state: InternalStateType,
-  restoreInputValues: () => void,
-  disposeOldHosts: () => void
-};
+interface StoreType {
+  state: InternalStateType;
+  restoreInputValues: () => void;
+  disposeOldHosts: () => void;
+}
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
@@ -84,6 +87,7 @@ type StoreType = {
     MdInputModule,
     MdButtonModule,
     DlSidebarNavModule,
+    DLMyAccountModule,
   ],
   exports: [
     RouterModule,
@@ -127,8 +131,7 @@ export class AppModule {
      * Set input values
      */
     if ('restoreInputValues' in store) {
-      let restoreInputValues = store.restoreInputValues;
-      setTimeout(restoreInputValues);
+      setTimeout(store.restoreInputValues);
     }
 
     this.appRef.tick();

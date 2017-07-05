@@ -5,6 +5,7 @@ import { NoContentComponent } from './no-content';
 import { LoginComponent } from './login';
 import { AuthGuard } from './_guards';
 // import { DataResolver } from './app.resolver';
+import dlRoutes from './dl-my-account/dl-my-account.routes';
 
 const appRoutes: Routes = [
   { path: '',      component: HomeComponent, canActivate: [AuthGuard] },
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
   { path: 'detail', loadChildren: './+detail#DetailModule'},
   { path: 'barrel', loadChildren: './+barrel#BarrelModule'},
   { path: 'login', component: LoginComponent },
+  ...dlRoutes,
   { path: '**',    component: NoContentComponent },
 ];
 

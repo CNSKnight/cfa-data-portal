@@ -1,7 +1,7 @@
 <nav>
     <md-list>
         <h3 md-subheader>Section 1</h3>
-        <md-list-item>
+        <md-list-item *ngIf="1==2">
             <md-icon md-list-icon>folder</md-icon>
             <a
                 [routerLink]="['./']"
@@ -13,13 +13,22 @@
         <md-list-item>
             <md-icon md-list-icon>folder</md-icon>
             <a
+                [routerLink]="['./my-account']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: false, prefix: true}">
+                My Account
+            </a>
+        </md-list-item>
+        <md-list-item *ngIf="1==2">
+            <md-icon md-list-icon>folder</md-icon>
+            <a
                 [routerLink]="['./home']"
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">
                 Home
             </a>
         </md-list-item>
-        <md-list-item>
+        <md-list-item *ngIf="1==2">
             <md-icon md-list-icon>folder</md-icon>
             <a
                 [routerLink]="['./detail']"
@@ -29,7 +38,7 @@
             </a>
         </md-list-item>
         <h3 md-subheader>Section 2</h3>
-        <md-list-item>
+        <md-list-item *ngIf="1==2">
             <md-icon md-list-icon>folder</md-icon>
             <a
                 [routerLink]="['./barrel']"
@@ -44,7 +53,7 @@
                 [routerLink]="['./about']"
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">
-                About
+                TBD
             </a>
         </md-list-item>
     </md-list>
