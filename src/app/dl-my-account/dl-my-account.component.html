@@ -1,0 +1,16 @@
+<h1>My Account</h1>
+
+<nav md-tab-nav-bar>
+    <a
+        md-tab-link
+        *ngFor="let tabLink of navTabLinks"
+        [routerLink]="tabLink.path"
+        routerLinkActive
+        #rla="routerLinkActive"
+        [active]="rla.isActive">
+        {{tabLink.label}}
+    </a>
+</nav>
+<div class="tab-panel" fxLayout="row wrap" fxLayoutAlign="center center">
+    <router-outlet></router-outlet>
+</div>
